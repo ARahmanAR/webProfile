@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdur Rahman - Developer & AI Enthusiast</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+        <link rel="stylesheet" href="assets/styles.css?v=2.0">
+    <!-- 3D Model Viewer Web Component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-link">Skip navigation and go to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.jpg" alt="AR Logo" class="logo-image">
+            </a>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="#main" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 3D Model Section (appears right after navigation) -->
+    <section class="model-section" aria-label="3D Mascot">
+        <div class="model-wrapper">
+            <model-viewer
+                id="dog-model"
+                src="assets/craftzdog-homepage/public/dog.glb"
+                alt="3D voxel dog model"
+                camera-controls
+                auto-rotate
+                auto-rotate-delay="0"
+                rotation-per-second="90deg"
+                shadow-intensity="0"
+                shadow-softness="0"
+                exposure="1"
+                camera-orbit="0deg 75deg 230%"
+                min-camera-orbit="auto auto 190%"
+                max-camera-orbit="auto auto 320%"
+                field-of-view="55deg"
+                min-field-of-view="45deg"
+                max-field-of-view="70deg"
+                rotation-per-second="32deg"
+                interaction-prompt="none"
+                poster=""
+                style="width:600px;height:600px;background:transparent;--poster-color:transparent;--poster-image:none;--poster-shadow:none;--poster-radius:0px;--poster-outline-color:transparent;--poster-border-color:transparent;--poster-outline-width:0px;--poster-border-width:0px;--progress-bar-color:transparent;--progress-mask:transparent;display:block;margin:0;padding:0;"
+                ar
+                ar-modes="webxr scene-viewer quick-look">
+            </model-viewer>
+        </div>
+    </section>
+
+    <!-- Digital Clock Widget -->
+    <div class="clock-widget">
+        <div id="clock">00:00:00</div>
+        <div id="date" class="date-display"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Info Box - Craftzdog style -->
+            <div class="info-box">
+                Hello, I'm a full-stack developer & AI enthusiast based in Bangladesh! 🇧🇩
+            </div>
+
+            <div class="marquee-container">
+                <div class="marquee">
+                    <h1 class="marquee-text">I'M ABDUR RAHMAN - DEVELOPER & AI ENTHUSIAST</h1>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <p class="lead-text">
+                    Your friendly neighborhood <strong>frontend developer</strong>, <strong>AI & ML enthusiast</strong>, 
+                    and <strong>JavaScript engineer</strong>. I spend my days (and often nights) painting the Internet canvas with 
+                    <a href="https://github.com/ARahmanAR" class="inline-link">projects</a> and lines of code, turning zeroes and ones into 
+                    immersive, interactive experiences.
+                </p>
+
+                <p class="lead-text">
+                    Passionate about building intelligent systems and beautiful web experiences. I tread the path of minimalism, 
+                    finding beauty in simplicity and order. When I'm not crafting web experiences, you can find me 
+                    <a href="#" class="inline-link">learning</a> about AI, deep learning, or exploring new technologies. 
+                    Anyways you can <a href="#contact" class="inline-link">reach out</a>.
+                </p>
+
+                <div class="cta-section">
+                    <a href="#about" class="cta-button">See More About Me</a>
+                    <div class="social-icons">
+                        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdur-rahman14/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/ARahmanAR" target="_blank" class="social-icon" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="https://dribbble.com" target="_blank" class="social-icon" aria-label="Dribbble">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.51m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32" fill="none" stroke="#fff" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="#fff" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Background</h3>
+                        <p>Based in Dhaka, Bangladesh. Passionate developer focused on creating elegant solutions through code. My journey combines creativity with technical expertise.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>What I Do</h3>
+                        <p>I build AI/ML solutions, craft beautiful web experiences, and automate workflows. Specializing in Python, JavaScript, and modern web technologies.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Interests</h3>
+                        <p>Deep learning, full-stack development, and emerging technologies. Always learning, experimenting, and contributing to the developer community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-description">
+                    Interested in collaborating or just want to say hi? Feel free to reach out.
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/ARahmanAR" target="_blank" class="contact-link">
+                        <span>GitHub</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdur-rahman14/" target="_blank" class="contact-link">
+                        <span>LinkedIn</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="mailto:abdurrahman262023@gmail.com" class="contact-link">
+                        <span>Email</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="contact-link">
+                        <span>Twitter</span>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Abdur Rahman. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    
+    <!-- Ensure 3D model has transparent background -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modelViewer = document.querySelector('#dog-model');
+            if (modelViewer) {
+                const easeOutCirc = x => Math.sqrt(1 - Math.pow(x - 1, 4));
+
+                const parseOrbit = orbitStr => {
+                    if (!orbitStr) return { theta: 0, phi: 75, radius: '230%' };
+                    const [thetaPart = '0deg', phiPart = '75deg', radiusPart = '230%'] = orbitStr.split(' ');
+                    const toDeg = value => {
+                        if (value.endsWith('deg')) return parseFloat(value);
+                        if (value.endsWith('rad')) return parseFloat(value) * (180 / Math.PI);
+                        return parseFloat(value);
+                    };
+                    return {
+                        theta: toDeg(thetaPart),
+                        phi: phiPart,
+                        radius: radiusPart
+                    };
+                };
+
+                const formatOrbit = (thetaDeg, phiPart, radiusPart) => {
+                    return `${thetaDeg.toFixed(3)}deg ${phiPart} ${radiusPart}`;
+                };
+
+                const runQuickSpin = () => {
+                    const duration = 2400;
+                    const extraTurnsDeg = 1080; // 3 additional rotations
+                    const hasAutoRotate = modelViewer.hasAttribute('auto-rotate');
+                    const baseOrbitAttr = modelViewer.getAttribute('camera-orbit');
+                    const { theta: baseThetaDeg, phi: basePhiPart, radius: baseRadiusPart } = parseOrbit(baseOrbitAttr);
+
+                    modelViewer.removeAttribute('auto-rotate');
+                    modelViewer.setAttribute('auto-rotate-delay', '0');
+
+                    const start = performance.now();
+
+                    const tick = now => {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = easeOutCirc(progress);
+                        const thetaDeg = baseThetaDeg + extraTurnsDeg * eased;
+                        modelViewer.cameraOrbit = formatOrbit(thetaDeg, basePhiPart, baseRadiusPart);
+
+                        if (progress < 1) {
+                            requestAnimationFrame(tick);
+                        } else {
+                            if (hasAutoRotate) {
+                                modelViewer.setAttribute('auto-rotate', '');
+                            }
+                            modelViewer.setAttribute('rotation-per-second', '32deg');
+                            modelViewer.cameraOrbit = formatOrbit(baseThetaDeg + extraTurnsDeg, basePhiPart, baseRadiusPart);
+                        }
+                    };
+
+                    requestAnimationFrame(tick);
+                };
+
+                // Wait for model to load
+                modelViewer.addEventListener('load', () => {
+                    console.log('3D model loaded successfully with transparent background');
+                    modelViewer.style.backgroundColor = 'transparent';
+                    runQuickSpin();
+                }, { once: true });
+            }
+        });
+    </script>
+</body>
+</html>
