@@ -127,6 +127,11 @@ window.addEventListener('scroll', () => {
 // DIGITAL CLOCK FUNCTIONALITY
 // ===========================
 
+const currentYearElement = document.getElementById('current-year');
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}
+
 function updateClock() {
     const now = new Date();
     
