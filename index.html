@@ -223,7 +223,14 @@
         <p>© <span id="current-year"></span> Abdur Rahman. All rights reserved.</p>
     </footer>
 
-    <script src="assets/script.js"></script>
+    <script>
+        const footerYear = document.getElementById('current-year');
+        if (footerYear) {
+            footerYear.textContent = new Date().getFullYear();
+        }
+    </script>
+
+    <script src="assets/script.js?v=20260316"></script>
     
     <!-- Ensure 3D model has transparent background -->
     <script>
