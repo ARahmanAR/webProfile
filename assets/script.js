@@ -136,10 +136,12 @@ function updateClock() {
     const now = new Date();
     
     // Format time
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    const timeString = `${hours}:${minutes}:${seconds}`;
+    const timeString = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    });
     
     // Format date
     const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
